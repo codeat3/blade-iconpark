@@ -2,6 +2,10 @@
 
 This changelog follows [the Keep a Changelog standard](https://keepachangelog.com).
 
+## 1.1.0 (2021-04-12)
+* added solid icons too
+* for outline icons use `-o` prefix
+
 ## 1.0.0 (2021-04-12)
 
 * Initial release.

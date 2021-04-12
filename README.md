@@ -17,7 +17,7 @@
     <img src="https://img.shields.io/packagist/dt/codeat3/blade-iconpark" alt="Total Downloads">
 </a>
 
-A package to easily make use of [Codicons](https://github.com/file-icons/icons) in your Laravel Blade views.
+A package to easily make use of [Icon Park](https://github.com/bytedance/IconPark) in your Laravel Blade views.
 
 For a full list of available icons see [the SVG directory](resources/svg).
 
