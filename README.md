@@ -41,19 +41,24 @@ Please refer to [`the upgrade guide`](UPGRADE.md) when updating the library.
 Icons can be used as self-closing Blade components which will be compiled to SVG icons:
 
 ```blade
-<x-iconpark-a-cane-o/>
+<x-iconpark-a-cane/>
 ```
 
 You can also pass classes to your icon components:
 
 ```blade
-<x-iconpark-a-cane-o class="w-6 h-6 text-gray-500"/>
+<x-iconpark-a-cane class="w-6 h-6 text-gray-500"/>
 ```
 
 And even use inline styles:
 
 ```blade
-<x-iconpark-a-cane-o style="color: #555"/>
+<x-iconpark-a-cane style="color: #555"/>
+```
+
+To use outline version append `-o`
+```blade
+<x-iconpark-a-cane-o/>
 ```
 
 ### Raw SVG Icons
@@ -67,7 +72,7 @@ php artisan vendor:publish --tag=blade-iconpark --force
 Then use them in your views like:
 
 ```blade
-<img src="{{ asset('vendor/blade-iconpark/a-cane-o.svg') }}" width="10" height="10"/>
+<img src="{{ asset('vendor/blade-iconpark/a-cane.svg') }}" width="10" height="10"/>
 ```
 
 ### Blade Icons
