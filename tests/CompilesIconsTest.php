@@ -18,7 +18,7 @@ class CompilesIconsTest extends TestCase
 
         // Note: the empty class here seems to be a Blade components bug.
         $expected = <<<'SVG'
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><rect width="48" height="48" fill="white" fill-opacity="0.01"/><circle cx="24" cy="24" r="20" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 24H33" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.5 16.2058L28.5 31.7942" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M28.5 16.2058L19.5 31.7942" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="48" fill="white" fill-opacity="0.01"/><circle cx="24" cy="24" r="20" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 24H33" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.5 16.2058L28.5 31.7942" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M28.5 16.2058L19.5 31.7942" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             SVG;
 
 
@@ -30,7 +30,7 @@ class CompilesIconsTest extends TestCase
     {
         $result = svg('iconpark-asterisk', 'w-6 h-6 text-gray-500')->toHtml();
         $expected = <<<'SVG'
-            <svg class="w-6 h-6 text-gray-500" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><rect width="48" height="48" fill="white" fill-opacity="0.01"/><circle cx="24" cy="24" r="20" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 24H33" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.5 16.2058L28.5 31.7942" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M28.5 16.2058L19.5 31.7942" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg class="w-6 h-6 text-gray-500" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="48" fill="white" fill-opacity="0.01"/><circle cx="24" cy="24" r="20" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 24H33" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.5 16.2058L28.5 31.7942" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M28.5 16.2058L19.5 31.7942" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             SVG;
         $this->assertSame($expected, $result);
     }
@@ -42,7 +42,7 @@ class CompilesIconsTest extends TestCase
 
 
         $expected = <<<'SVG'
-            <svg style="color: #555" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><rect width="48" height="48" fill="white" fill-opacity="0.01"/><circle cx="24" cy="24" r="20" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 24H33" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.5 16.2058L28.5 31.7942" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M28.5 16.2058L19.5 31.7942" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg style="color: #555" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="48" fill="white" fill-opacity="0.01"/><circle cx="24" cy="24" r="20" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 24H33" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.5 16.2058L28.5 31.7942" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M28.5 16.2058L19.5 31.7942" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             SVG;
 
         $this->assertSame($expected, $result);
@@ -56,7 +56,7 @@ class CompilesIconsTest extends TestCase
         $result = svg('iconpark-asterisk')->toHtml();
 
         $expected = <<<'SVG'
-            <svg class="awesome" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><rect width="48" height="48" fill="white" fill-opacity="0.01"/><circle cx="24" cy="24" r="20" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 24H33" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.5 16.2058L28.5 31.7942" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M28.5 16.2058L19.5 31.7942" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg class="awesome" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="48" fill="white" fill-opacity="0.01"/><circle cx="24" cy="24" r="20" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 24H33" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.5 16.2058L28.5 31.7942" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M28.5 16.2058L19.5 31.7942" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             SVG;
 
         $this->assertSame($expected, $result);
@@ -71,7 +71,7 @@ class CompilesIconsTest extends TestCase
         $result = svg('iconpark-asterisk', 'w-6 h-6')->toHtml();
 
         $expected = <<<'SVG'
-            <svg class="awesome w-6 h-6" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><rect width="48" height="48" fill="white" fill-opacity="0.01"/><circle cx="24" cy="24" r="20" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 24H33" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.5 16.2058L28.5 31.7942" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M28.5 16.2058L19.5 31.7942" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg class="awesome w-6 h-6" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="48" fill="white" fill-opacity="0.01"/><circle cx="24" cy="24" r="20" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 24H33" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.5 16.2058L28.5 31.7942" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M28.5 16.2058L19.5 31.7942" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             SVG;
 
         $this->assertSame($expected, $result);
