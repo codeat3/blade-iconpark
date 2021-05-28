@@ -6,17 +6,26 @@ namespace Codeat3\BladeIconpark;
 
 use BladeUI\Icons\Factory;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Contracts\Container\Container;
 
 final class BladeIconparkServiceProvider extends ServiceProvider
 {
+
     public function register(): void
     {
-        $this->callAfterResolving(Factory::class, function (Factory $factory) {
-            $factory->add('iconpark', [
-                'path' => __DIR__.'/../resources/svg',
-                'prefix' => 'iconpark',
-            ]);
+        $this->registerConfig();
+
+        $this->callAfterResolving(Factory::class, function (Factory $factory, Container $container) {
+            $config = $container->make('config')->get('blade-iconpark', []);
+
+            $factory->add('iconpark', array_merge(['path' => __DIR__.'/../resources/svg'], $config));
         });
+
+    }
+
+    private function registerConfig(): void
+    {
+        $this->mergeConfigFrom(__DIR__.'/../config/blade-iconpark.php', 'blade-iconpark');
     }
 
     public function boot(): void
@@ -25,6 +34,10 @@ final class BladeIconparkServiceProvider extends ServiceProvider
             $this->publishes([
                 __DIR__.'/../resources/svg' => public_path('vendor/blade-iconpark'),
             ], 'blade-iconpark');
+
+            $this->publishes([
+                __DIR__.'/../config/blade-iconpark.php' => $this->app->configPath('blade-iconpark.php'),
+            ], 'blade-iconpark-config');
         }
     }
 }

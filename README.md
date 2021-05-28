@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://banners.beyondco.de/Blade%20Icon%20Park.png?theme=light&packageManager=composer+require&packageName=codeat3%2Fblade-iconpark&pattern=architect&style=style_1&description=A+package+to+use+Icon+Park+in+your+Laravel+Blade+views&md=1&showWatermark=1&fontSize=100px&images=https%3A%2F%2Flaravel.com%2Fimg%2Flogomark.min.svg" width="1280" title="Social Card Blade Icon Park">
+    <img src="./socialcard-blade-iconpark.png" width="1280" title="Social Card Blade Icon Park">
 </p>
 
 # Blade Icon Park
@@ -33,29 +33,41 @@ composer require codeat3/blade-iconpark
 
 Please refer to [`the upgrade guide`](UPGRADE.md) when updating the library.
 
+## Blade Icons
+
+Blade Icon Park uses Blade Icons under the hood. Please refer to [the Blade Icons readme](https://github.com/blade-ui-kit/blade-icons) for additional functionality. We also recommend to [enable icon caching](https://github.com/blade-ui-kit/blade-icons#caching) with this library.
+
+## Configuration
+
+Blade Icon Park also offers the ability to use features from Blade Icons like default classes, default attributes, etc. If you'd like to configure these, publish the `blade-iconpark.php` config file:
+
+```bash
+php artisan vendor:publish --tag=blade-iconpark-config
+```
+
 ## Usage
 
 Icons can be used as self-closing Blade components which will be compiled to SVG icons:
 
 ```blade
-<x-iconpark-a-cane/>
+<x-iconpark-acane/>
 ```
 
 You can also pass classes to your icon components:
 
 ```blade
-<x-iconpark-a-cane class="w-6 h-6 text-gray-500"/>
+<x-iconpark-acane class="w-6 h-6 text-gray-500"/>
 ```
 
 And even use inline styles:
 
 ```blade
-<x-iconpark-a-cane style="color: #555"/>
+<x-iconpark-acane style="color: #555"/>
 ```
 
 To use outline version append `-o`
 ```blade
-<x-iconpark-a-cane-o/>
+<x-iconpark-acane-o/>
 ```
 
 ### Raw SVG Icons
@@ -69,12 +81,8 @@ php artisan vendor:publish --tag=blade-iconpark --force
 Then use them in your views like:
 
 ```blade
-<img src="{{ asset('vendor/blade-iconpark/a-cane.svg') }}" width="10" height="10"/>
+<img src="{{ asset('vendor/blade-iconpark/acane.svg') }}" width="10" height="10"/>
 ```
-
-### Blade Icons
-
-Blade Icon Park uses Blade Icons under the hood. Please refer to [the Blade Icons readme](https://github.com/blade-ui-kit/blade-icons) for additional functionality.
 
 ## Changelog
 

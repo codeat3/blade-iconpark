@@ -19,5 +19,5 @@ php artisan vendor:publish --tag=blade-iconpark --force
 The new way to reference them is:
 
 ```blade
-<img src="{{ asset('vendor/blade-iconpark/a-cane-o.svg') }}" width="10" height="10"/>
+<img src="{{ asset('vendor/blade-iconpark/acane-o.svg') }}" width="10" height="10"/>
 ```
