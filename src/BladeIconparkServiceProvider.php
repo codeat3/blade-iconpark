@@ -10,7 +10,6 @@ use Illuminate\Contracts\Container\Container;
 
 final class BladeIconparkServiceProvider extends ServiceProvider
 {
-
     public function register(): void
     {
         $this->registerConfig();
@@ -20,7 +19,6 @@ final class BladeIconparkServiceProvider extends ServiceProvider
 
             $factory->add('iconpark', array_merge(['path' => __DIR__.'/../resources/svg'], $config));
         });
-
     }
 
     private function registerConfig(): void
