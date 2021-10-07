@@ -2,6 +2,9 @@
 
 This changelog follows [the Keep a Changelog standard](https://keepachangelog.com).
 
+## 1.3.1 (2021-10-07)
+* synced with the latest icons from the original parent repo
+
 ## 1.2.0 (2021-05-28)
 * added config support
 
