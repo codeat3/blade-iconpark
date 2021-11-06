@@ -2,6 +2,8 @@
 
 This changelog follows [the Keep a Changelog standard](https://keepachangelog.com).
 
+## [Unreleased](https://github.com/codeat3/blade-iconpark/compare/1.3.1...main)
+
 ## 1.3.1 (2021-10-07)
 * synced with the latest icons from the original parent repo
 
