@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Codeat3\BladeIconpark;
 
 use BladeUI\Icons\Factory;
-use Illuminate\Support\ServiceProvider;
 use Illuminate\Contracts\Container\Container;
+use Illuminate\Support\ServiceProvider;
 
 final class BladeIconparkServiceProvider extends ServiceProvider
 {
@@ -17,24 +17,24 @@ final class BladeIconparkServiceProvider extends ServiceProvider
         $this->callAfterResolving(Factory::class, function (Factory $factory, Container $container) {
             $config = $container->make('config')->get('blade-iconpark', []);
 
-            $factory->add('iconpark', array_merge(['path' => __DIR__.'/../resources/svg'], $config));
+            $factory->add('iconpark', array_merge(['path' => __DIR__ . '/../resources/svg'], $config));
         });
     }
 
     private function registerConfig(): void
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/blade-iconpark.php', 'blade-iconpark');
+        $this->mergeConfigFrom(__DIR__ . '/../config/blade-iconpark.php', 'blade-iconpark');
     }
 
     public function boot(): void
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/../resources/svg' => public_path('vendor/blade-iconpark'),
+                __DIR__ . '/../resources/svg' => public_path('vendor/blade-iconpark'),
             ], 'blade-iconpark');
 
             $this->publishes([
-                __DIR__.'/../config/blade-iconpark.php' => $this->app->configPath('blade-iconpark.php'),
+                __DIR__ . '/../config/blade-iconpark.php' => $this->app->configPath('blade-iconpark.php'),
             ], 'blade-iconpark-config');
         }
     }
