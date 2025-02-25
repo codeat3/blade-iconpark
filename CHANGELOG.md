@@ -2,7 +2,15 @@
 
 This changelog follows [the Keep a Changelog standard](https://keepachangelog.com).
 
-## [Unreleased](https://github.com/codeat3/blade-iconpark/compare/1.6.0...HEAD)
+## [Unreleased](https://github.com/codeat3/blade-iconpark/compare/1.7.0...HEAD)
+
+## [1.7.0](https://github.com/codeat3/blade-iconpark/compare/1.6.0...1.7.0) - 2025-02-25
+
+### What's Changed
+
+* laravel 12 support added by @swapnilsarwe in https://github.com/codeat3/blade-iconpark/pull/6
+
+**Full Changelog**: https://github.com/codeat3/blade-iconpark/compare/1.6.0...1.7.0
 
 ## [1.6.0](https://github.com/codeat3/blade-iconpark/compare/1.5.1...1.6.0) - 2024-02-28
 
